@@ -1,684 +1,737 @@
 /* make sure there is no css style on the page */
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*------------- header -------------*/
 #header {
-  background-color: #0c72c4;
-  padding: 0;
-  margin: 0;
+	background-color: #0c72c4;
+	padding: 0;
+	margin: 0;
 }
 
 .top-bar,
 .top-bar ul {
-  background-color: #0c72c4;
-  padding: 0;
+	background-color: #0c72c4;
+	padding: 0;
 }
 
 .menu a {
-  font-size: 20px;
-  color: #fefefe;
-  transition: color 0.5s ease;
-  margin:9px
+	font-size: 20px;
+	color: #fefefe;
+	transition: all 0.7s ease;
+	margin: 9px;
 }
 
 .menu a:hover {
-  font-size: 18px;
-  color: #54b8d6;
+	font-size: 18px;
+	color: #54b8d6;
 }
 
 #logo {
-  color: white;
+	color: white;
 }
 #aiLogo {
-  margin-left: 40px;
-  height: 70px;
-  width: 150px;
+	height: 65px;
+	width: 130px;
+	transition: all 0.7s ease;
+}
+
+#aiLogo:hover {
+	transform: scale(1.1);
 }
 
 .fa {
-  padding: 5px;
+	padding: 5px;
+}
+
+ul .menu li:hover {
+	color: white !important;
 }
 
 /*-----logo----- */
 .logoImage {
-  width: 175px;
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
+	width: 175px;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 /* -----------End of header ------------- */
 
 /*------------ banner section ---------------*/
 #banner {
-  height: auto;
-  margin-top: 0rem;
-  padding: 0rem;
-  margin: 0rem;
-  position: relative;
+	height: auto;
+	margin-top: 0rem;
+	padding: 0rem;
+	margin: 0rem;
+	position: relative;
 }
 
 button.orbit-next {
-  display: none;
+	display: none;
 }
 
 /* Hidig the slider arrow */
 button.orbit-next {
-  display: none;
+	display: none;
 }
 
 button.orbit-previous {
-  display: none;
+	display: none;
 }
 
 /* banner Slider */
 .orbit-container {
-  height: 700px !important;
+	height: 700px !important;
 }
 
 .orbit-image {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  height: 650px;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	height: 650px;
+	object-fit: cover;
 }
 
 .orbit-caption {
-  font-weight: bolder;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 0;
-  padding: 1rem;
-  background-color: rgba(10, 10, 10, 0.5);
-  color: #fefefe;
-  font-size: 24px;
+	font-weight: bolder;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 1rem;
+	background-color: rgba(10, 10, 10, 0.5);
+	color: #fefefe;
+	font-size: 24px;
 }
 
 /* Mouse scroll button on banner */
 
 @keyframes scroll_2 {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    transform: translateY(0.75em);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 0;
-  }
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		transform: translateY(0.75em);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 0;
+	}
 }
 
 .scroll-icon__dot {
-  display: block;
-  position: absolute;
-  left: 50%;
-  background: #fff;
-  height: 0.5em;
-  width: 0.5em;
-  top: 0.6em;
-  margin-left: -0.25em;
-  border-radius: 50%;
-  transform-origin: top center;
-  backface-visibility: hidden;
-  animation: scroll_2 2s ease-out infinite;
+	display: block;
+	position: absolute;
+	left: 50%;
+	background: #fff;
+	height: 0.5em;
+	width: 0.5em;
+	top: 0.6em;
+	margin-left: -0.25em;
+	border-radius: 50%;
+	transform-origin: top center;
+	backface-visibility: hidden;
+	animation: scroll_2 2s ease-out infinite;
 }
 
 .scroll-icon {
-  display: block;
-  position: relative;
-  height: 3em;
-  width: 2em;
-  border: 0.25em solid #fff;
-  border-radius: 1em;
+	display: block;
+	position: relative;
+	height: 3em;
+	width: 2em;
+	border: 0.25em solid #fff;
+	border-radius: 1em;
 }
 
 .page-wrap {
-  display: flex;
-  height: 100vh;
+	display: flex;
+	height: 100vh;
 }
 
 .mouse-scroll {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 50%;
-  top: 85%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 85%;
 }
+
+/*------------- alert section -------------*/
+#alert-section {
+	background-color: #fff;
+	margin: 0;
+	padding: 1%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
 /*------------- Face detection section -------------*/
 #faceDetection {
-  background-color: #fff;
-  margin: 0;
-  padding: 1%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	background-color: #fff;
+	margin: 0;
+	padding: 1%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 #btns-video {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
-#btns-video h1{
-  width: 100%;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #e49401;
+#btns-video h1 {
+	width: 100%;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #e49401;
 }
 #videoDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #btnsDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  width: 100%;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	width: 100%;
+	position: relative;
 }
 #pauseBtn {
-  color: rgb(187, 1, 1);
-  font-size: 50px;
-  cursor: pointer;
+	color: rgb(187, 1, 1);
+	font-size: 50px;
+	cursor: pointer;
 }
-#redo  {
-  font-size:50px;
-  cursor: pointer;
+#redo {
+	font-size: 50px;
+	cursor: pointer;
 }
 #startBtn {
-  color: green;
-  font-size: 50px;
-  position: absolute;
-  cursor: pointer;
+	color: green;
+	font-size: 50px;
+	position: absolute;
+	cursor: pointer;
 }
 #table {
-  width: 350px;
-  height: 400px;
-  font-size: 25px;
-  text-align: center;
-  margin: 0;
-  margin-right: 1%;
-  border: 2px gray solid;
-  line-height: 0;
+	width: 350px;
+	height: 400px;
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
+	margin-right: 1%;
+	border: 2px gray solid;
+	line-height: 0;
 }
 #table th {
-  font-family: serif;
-  font-size: 35px;
+	font-family: serif;
+	font-size: 35px;
 }
 #msgDiv {
-  background-color: #fff;
-  width: 500px;
-  height: 400px;
-  text-align: center;
-  margin-left: 1%;
-  margin-bottom: 20px;
-  border: 1.5px gray solid;
+	background-color: #fff;
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	margin-left: 1%;
+	margin-bottom: 20px;
+	border: 1.5px gray solid;
 }
 #msgDiv h2 {
-  font-family: serif;
-  padding: 0;
-  margin: 0;
+	font-family: serif;
+	padding: 0;
+	margin: 0;
 }
 hr {
-  margin: 0;
+	margin: 0;
 }
 canvas {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
 }
 
 div#videoDiv {
-  min-height: 450px;
-  height: auto;
+	min-height: 450px;
+	height: auto;
 }
 
 img.camera-image {
-  width: 600px;
-  height: 442px;
+	width: 600px;
+	height: 442px;
 }
 #video {
-  position: relative;
+	position: relative;
 }
 
 .camera-image {
-  position: absolute;
+	position: absolute;
 }
 
 #btns-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
 }
 /*------------ End of Face detection section ------------*/
 /*------------ Mouth detection section ------------*/
 section.mouthDetection {
-  background-color: rgb(243 240 239);
+	background-color: rgb(243 240 239);
 }
-.header-mouth{
-  width: 100%;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: #e49401;
+.header-mouth {
+	width: 100%;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #e49401;
 }
 #mouthDetection {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 #btns-video-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
 }
 
 i.fas.fa-microphone-alt.talking {
-  font-size: 42px;
-  color: #88ce02;
+	font-size: 42px;
+	color: #88ce02;
 }
 
 i.fas.fa-microphone-alt-slash.silent {
-  font-size: 42px;
-  color: red;
+	font-size: 42px;
+	color: red;
 }
 
 .mice-icon {
-  position: absolute;
-  top: 85%;
+	position: absolute;
+	top: 85%;
 }
 
 #pauseBtn2 {
-  color: rgb(185, 7, 7);
-  font-size: 50px;
- cursor: pointer;
+	color: rgb(185, 7, 7);
+	font-size: 50px;
+	cursor: pointer;
 }
 
 #startBtn2 {
-  color: green;
-  font-size: 50px;
- cursor: pointer;
+	color: green;
+	font-size: 50px;
+	cursor: pointer;
 }
 
 img.camera-image2 {
-  width: 600px;
-  height: 454px;
+	width: 600px;
+	height: 454px;
 }
 #video2 {
-  position: relative;
+	position: relative;
 }
 
 .camera-image2 {
-  position: absolute;
+	position: absolute;
 }
 
 img.button1.turnOnCamera2 {
-    position: absolute;
-    left: 92.5%;
-    bottom: 86%;
-    cursor: pointer;
+	position: absolute;
+	left: 92.5%;
+	bottom: 86%;
+	cursor: pointer;
 }
 #videoDiv2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*------------ End of Mouth detection section ------------*/
+
+.alert {
+	display: none;
+}
+@media only screen and (max-width: 414px) {
+	.alert {
+		display: block;
+		padding: 20px;
+		background-color: #f44336;
+		color: white;
+	}
+	#faceDetection {
+		display: none;
+	}
+	.mouthDetection {
+		display: none;
+	}
+
+	#grid-container img {
+		height: 16rem;
+	}
+}
 /*------------ About us section -----------*/
 section.aboutUs {
-  background-color: #fff;
-  padding-top: 5%;
-  padding-bottom: 5%;
+	background-color: #fff;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 #aboutUs {
-  overflow: auto;
-  width: 1000px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
+	overflow: auto;
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
 }
 
 #aboutUs h1 {
-  width: 100%;
-  font-size: 60px;
-  text-align: center;
-  color: rgb(170, 4, 4);
-  font-family: serif;
-  margin-bottom: 5%;
+	width: 100%;
+	font-size: 60px;
+	text-align: center;
+	color: rgb(170, 4, 4);
+	font-family: serif;
+	margin-bottom: 5%;
 }
 /*  The div that hold the images */
 .imgDiv {
-  width: 50%;
-  display: flex;
-  padding-right: 5px;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+	width: 50%;
+	display: flex;
+	padding-right: 5px;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 /* #aboutUs img {
   height: 400px;
 } */
 /* The div that hold P */
 .pDiv {
-  width: 50%;
-  background-color: #fff;
-  padding-top: 25px;
+	width: 50%;
+	background-color: #fff;
+	padding-top: 25px;
 }
 /* The actual p */
 .pDiv p {
-  font-size: 20px;
-  margin: 0;
+	font-size: 20px;
+	margin: 0;
 }
 /*------------- End of about us section -------------*/
 /*------------- Developer section ------------- */
 #developer {
-  background-color: rgb(243 240 239);
-  padding-bottom: 5%;
-  padding-top: 5%;
+	background-color: rgb(243 240 239);
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 #grid-container h1 {
-  text-align: center;
-  font-family: serif;
-  font-size: 60px;
-  clear: both;
-  margin-bottom: 43px;
+	text-align: center;
+	font-family: serif;
+	font-size: 60px;
+	clear: both;
+	margin-bottom: 43px;
 }
 /* Taking off the border */
 .card {
-  border: none;
+	border: none;
 }
 /* Making all images have the same size */
 #grid-container img {
-  height: 20rem;
+	height: 20rem;
 }
 
 /* developer section h4 */
 #grid-container h4 {
-  text-align: center;
+	text-align: center;
 }
 /* customize the icon size and place */
 .iDiv {
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+	font-size: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 /* change the Github color to its original color */
 .fa-github {
-  color: black;
+	color: black;
 }
 /* change the Linkedin icaon color to its original color */
 .fa-linkedin {
-  color: #0e76a8;
+	color: #0e76a8;
 }
 /* change the Gmail icaon color to its original color */
 .fa-envelope {
-  color: #d44638;
+	color: #d44638;
 }
 /*-------------- End of developer section ------------*/
 /*-------------- Footer section --------------*/
 footer {
-  width: 100%;
-  height: 5rem;
-  background-color: gray;
-  padding: 1.3rem;
-  position: relative;
+	width: 100%;
+	height: 5rem;
+	background-color: gray;
+	padding: 1.3rem;
+	position: relative;
 }
 footer p {
-  text-align: center;
-  color: black;
-  font-size: 20px;
+	text-align: center;
+	color: black;
+	font-size: 20px;
 }
 /* ----------End of footer section ----------*/
 /*---------The scroll button-----------*/
 #go-up {
-  font-size: 40px;
-  color: black;
-  position: fixed;
-  bottom: 2px;
-  right: 40px;
-  opacity: 0.2;
-  padding: 5px;
-  text-align: center;
+	font-size: 40px;
+	color: black;
+	position: fixed;
+	bottom: 2px;
+	right: 40px;
+	opacity: 0.2;
+	padding: 5px;
+	text-align: center;
 }
 /* ---------End of the scroll button-----------*/
 /*---------- Media Rule ------------*/
 @media only screen and (max-width: 1350px) {
-  /* --------- Face detectionb section ----------- */
-  #faceDetection {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  #btns-video {
-    width: 100%;
-  }
-  #btns-div {
-    width: 100%;
-  }
-  #table {
-    order: 2;
-    width: 47%;
-    height: 200px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  #msgDiv {
-    width: 47%;
-    height: auto;
-    min-height: 200px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
+	/* --------- Face detectionb section ----------- */
+	#faceDetection {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	#btns-video {
+		width: 100%;
+	}
+	#btns-div {
+		width: 100%;
+	}
+	#table {
+		order: 2;
+		width: 47%;
+		height: 200px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	#msgDiv {
+		width: 47%;
+		height: auto;
+		min-height: 200px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 
-  /* --------- End of face detection section -----------*/
+	/* --------- End of face detection section -----------*/
 }
- /* --------- Slider ----------- */
+/* --------- Slider ----------- */
 @media only screen and (max-width: 980px) {
-  
-    .orbit-container {
-    height: 500px !important;
-  }
-  .orbit-image {
-    height: 500px;
-  }
-  .mouse-scroll {
-    top: 89%;
-  }
-   /* --------- End Slider ----------- */
-  
-  /* --------- Search section ----------- */
-  .imageItem {
-    max-width: 12%;
-  }
-  .grid-x > .small-4 {
-    width: 100%;
-  }
-  /* ------------ End dearch section ----------- */
-  /* ---------About us section----------- */
-  #aboutUs {
-    width: 96%;
-    margin: 2%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-  }
-  #aboutUs h1 {
-    font-size: 55px;
-  }
+	.orbit-container {
+		height: 500px !important;
+	}
+	.orbit-image {
+		height: 500px;
+	}
+	.mouse-scroll {
+		top: 89%;
+	}
+	/* --------- End Slider ----------- */
 
-  /* ----------End of about us section----------- */
-  /* ----------Developer section---------- */
-  #grid-container h1 {
-    font-size: 55px;
-  }
-  /*----------End of Developer section---------- */
-  
+	/* --------- Search section ----------- */
+	.imageItem {
+		max-width: 12%;
+	}
+	.grid-x > .small-4 {
+		width: 100%;
+	}
+	/* ------------ End dearch section ----------- */
+	/* ---------About us section----------- */
+	#aboutUs {
+		width: 96%;
+		margin: 2%;
+		margin-top: 5%;
+		display: flex;
+		flex-direction: row;
+	}
+	#aboutUs h1 {
+		font-size: 55px;
+	}
+
+	/* ----------End of about us section----------- */
+	/* ----------Developer section---------- */
+	#grid-container h1 {
+		font-size: 55px;
+	}
+	/*----------End of Developer section---------- */
 }
 
 @media only screen and (max-width: 760px) {
-  /* ------------ Face detection section ------------*/
-  #msgDiv {
-    width: 90%;
-    height: auto;
-    margin-bottom: 1%;
-  }
-  #table {
-    order: 2;
-    width: 90%;
-    height: 200px;
-    font-size: 20px;
-  }
-  /* ------------ End of face detection section ------------ */
-  /* ------------ Search section ------------ */
-  .logoImage {
-    width: 145px;
-  }
-  .menu a {
-    font-size: 16px;
-  }
-  #grid-container h1 {
-    font-size: 50px;
-  }
-  /* ------------- End search section ----------- */
-  /* -------------About us section------------- */
-  #aboutUs {
-    width: 96%;
-    padding: 2%;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-  }
-  #aboutUs h1 {
-    font-size: 45px;
-  }
-  .imgDiv {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .pDiv {
-    width: 100%;
-    background-color: #fff;
-  }
-  /* ----------End of about us section----------- */
-  /* ----------Developer section---------- */
-  #grid-container h1 {
-    font-size: 50px;
-  }
-  /*----------End of Developer section---------- */
-  /* --------- Search section ----------- */
-  .logoImage {
-    width: 145px;
-  }
-  .menu a {
-    font-size: 16px;
-  }
-  #grid-container h1 {
-    font-size: 50px;
-  }
-  /* ------------ End search section ----------- */
+	/* ------------ Face detection section ------------*/
+	#msgDiv {
+		width: 90%;
+		height: auto;
+		margin-bottom: 1%;
+	}
+	#table {
+		order: 2;
+		width: 90%;
+		height: 200px;
+		font-size: 20px;
+	}
+	/* ------------ End of face detection section ------------ */
+	/* ------------ Search section ------------ */
+	.logoImage {
+		width: 145px;
+	}
+	.menu a {
+		font-size: 16px;
+	}
+	#grid-container h1 {
+		font-size: 50px;
+	}
+	/* ------------- End search section ----------- */
+	/* -------------About us section------------- */
+	#aboutUs {
+		width: 96%;
+		padding: 2%;
+		margin-top: 5%;
+		display: flex;
+		flex-direction: column;
+	}
+	#aboutUs h1 {
+		font-size: 45px;
+	}
+	.imgDiv {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.pDiv {
+		width: 100%;
+		background-color: #fff;
+	}
+	/* ----------End of about us section----------- */
+	/* ----------Developer section---------- */
+	#grid-container h1 {
+		font-size: 50px;
+	}
+	/*----------End of Developer section---------- */
+	/* --------- Search section ----------- */
+	.logoImage {
+		width: 145px;
+	}
+	.menu a {
+		font-size: 16px;
+	}
+	#grid-container h1 {
+		font-size: 50px;
+	}
+	/* ------------ End search section ----------- */
 }
 
 @media only screen and (max-width: 724px) {
-  /* --------- Developer section ----------- */
-  .grid-margin-x.medium-up-3 > .cell {
-    width: 45%;
-  }
-  /* --------- End developer section---------- */
+	/* --------- Developer section ----------- */
+	.grid-margin-x.medium-up-3 > .cell {
+		width: 45%;
+	}
+	/* --------- End developer section---------- */
 }
 
 @media only screen and (max-width: 640px) {
-  /* --------- Slider section ----------- */
-    .orbit-container {
-    height: 350px !important;
-  }
-  .orbit-image {
-    height: 350px;
-  }
-  .orbit-caption {
-    font-size: 16px;
-  }
-  .mouse-scroll {
-    top: 85%;
-  }
-  /* --------- End Slider section ----------- */
-  
-  /* --------- Search section ----------- */
-  .logoImage {
-    width: 145px;
-    position: relative;
-  }
-  .menu a {
-    font-size: 16px;
-  }
-  .fa {
-    padding: 2px;
-  }
-  .eachItem {
-    font-size: 18px;
-  }
-  .grid-margin-x.medium-up-3 > .cell {
-    width: 65%;
-    margin-left: 18%;
-  }
-  /* ------------ End search section ----------- */
-  /*--------About us section-------- */
-  #aboutUs {
-    width: 96%;
-    margin: 2%;
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  #aboutUs h1 {
-    font-size: 45px;
-  }
-  .imgDiv {
-    width: 90%;
-    flex-wrap: nowrap;
-  }
-  .imgDiv img {
-    height: 350px;
-  }
-  .pDiv {
-    width: 90%;
-    font-size: 15px;
-  }
-  /* ---------End of about us section---------*/
-  /* ---------Developer section---------- */
-  #grid-container h1 {
-    font-size: 45px;
-  }
-  /* --------End of developer section--------- */
+	/* --------- Slider section ----------- */
+	.orbit-container {
+		height: 350px !important;
+	}
+	.orbit-image {
+		height: 350px;
+	}
+	.orbit-caption {
+		font-size: 16px;
+	}
+	.mouse-scroll {
+		top: 85%;
+	}
+	/* --------- End Slider section ----------- */
+
+	/* --------- Search section ----------- */
+	.logoImage {
+		width: 145px;
+		position: relative;
+	}
+	.menu a {
+		font-size: 16px;
+	}
+	.fa {
+		padding: 2px;
+	}
+	.eachItem {
+		font-size: 18px;
+	}
+	.grid-margin-x.medium-up-3 > .cell {
+		width: 65%;
+		margin-left: 18%;
+	}
+	/* ------------ End search section ----------- */
+	/*--------About us section-------- */
+	#aboutUs {
+		width: 96%;
+		margin: 2%;
+		margin-top: 5%;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+	#aboutUs h1 {
+		font-size: 45px;
+	}
+	.imgDiv {
+		width: 90%;
+		flex-wrap: nowrap;
+	}
+	.imgDiv img {
+		height: 350px;
+	}
+	.pDiv {
+		width: 90%;
+		font-size: 15px;
+	}
+	/* ---------End of about us section---------*/
+	/* ---------Developer section---------- */
+	#grid-container h1 {
+		font-size: 45px;
+	}
+	/* --------End of developer section--------- */
+}
+@media only screen and (max-width: 639px) {
+	#aiLogo {
+		display: none;
+	}
+	ul.dropdown.menu.float-right {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+	}
 }
